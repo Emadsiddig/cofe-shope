@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Omda Cafe - Best Coffee & Food in Town</title>
+  <link rel="preload" href="css/style.css" as="style">
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" as="style">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-container container">
+☕✨ Omda Cafe ✨
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section id="home" class="hero">
+    <div class="hero-content container fade-in">
+      <h1>Welcome to Omda Cafe</h1>
+      <p>Experience the best coffee, delicious food, and warm atmosphere</p>
+      <a href="#menu" class="btn">View Our Menu</a>
+    </div>
+  </section>
+
+  <section id="about" class="about section fade-in">
+    <div class="container">
+      <h2 class="section-title">About Us</h2>
+      <div class="about-content">
+        <div class="about-text">
+          <h2>Your Favorite Spot Since 2015</h2>
+          <p>Omda Cafe is more than just a coffee shop - it's a community hub where friends meet, ideas are born, and memories are made over the perfect cup of coffee.</p>
+          <p>We source our beans from the best sustainable farms and roast them fresh daily. Our menu features classic favorites alongside innovative creations that will surprise your taste buds.</p>
+          <a href="#menu" class="btn">Explore Menu</a>
+        </div>
+        <img loading="lazy" src="./assets/shop.jpg" alt="Omda Cafe Interior" class="about-img">
+      </div>
+    </div>
+  </section>
+
+  <section id="menu" class="menu section fade-in">
+    <div class="container">
+      <h2 class="section-title">Our Menu</h2>
+      <div class="menu-filters">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="coffee">Coffee</button>
+        <button class="filter-btn" data-filter="food">Food</button>
+        <button class="filter-btn" data-filter="drinks">Drinks</button>
+      </div>
+      <div class="menu-grid">
+        <div class="menu-item" data-category="coffee">
+          <img class="menu-img" src="assets/espresso.jpg" alt="Espresso">
+          <h3>Espresso</h3>
+          <p class="menu-price">$3.50</p>
+        </div>
+        <div class="menu-item" data-category="coffee">
+          <img class="menu-img" loading="lazy" src="./assets/cappuccino.jpg" alt="Cappuccino">
+          <h3>Cappuccino</h3>
+          <p class="menu-price">$4.75</p>
+        </div>
+        <div class="menu-item" data-category="coffee">
+          <img class="menu-img" loading="lazy" src="./assets/latte.jpg" alt="Latte">
+          <h3>Latte</h3>
+          <p class="menu-price">$5.00</p>
+        </div>
+        <div class="menu-item" data-category="food">
+          <img class="menu-img" loading="lazy" src="https://images.unsplash.com/photo-1551632811-561732d1e306?ixlib=rb-4.0.3&amp;auto=format&amp;fit=crop&amp;w=400&amp;q=80" alt="Croissant">
+          <h3>Butter Croissant</h3>
+          <p class="menu-price">$3.25</p>
+        </div>
+        <div class="menu-item" data-category="food">
+          <img class="menu-img" loading="lazy" src="https://images.unsplash.com/photo-1570129477492-45c003edd2be?ixlib=rb-4.0.3&amp;auto=format&amp;fit=crop&amp;w=400&amp;q=80" alt="Avocado Toast">
+          <h3>Avocado Toast</h3>
+          <p class="menu-price">$8.50</p>
+        </div>
+        <div class="menu-item" data-category="food">
+          <img class="menu-img" loading="lazy" src="./assets/Club Sandwich.jpg" alt="Sandwich">
+          <h3>Club Sandwich</h3>
+          <p class="menu-price">$9.75</p>
+        </div>
+        <div class="menu-item" data-category="drinks">
+          <img class="menu-img" loading="lazy" src="./assets/Orange Juice.jpg" alt="Fresh Juice">
+          <h3>Orange Juice</h3>
+          <p class="menu-price">$4.00</p>
+        </div>
+        <div class="menu-item" data-category="drinks">
+          <img class="menu-img" loading="lazy" src="./assets/Berry Smoothie.jpg" alt="Smoothie">
+          <h3>Berry Smoothie</h3>
+          <p class="menu-price">$6.50</p>
+        </div>
+        <div class="menu-item" data-category="drinks">
+          <img class="menu-img" loading="lazy" src="./assets/Matcha Latte.jpg" alt="Matcha">
+          <h3>Matcha Latte</h3>
+          <p class="menu-price">$5.75</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="gallery" class="gallery section fade-in">
+    <div class="container">
+      <h2 class="section-title">Gallery</h2>
+      <div class="slider-container">
+        <div class="slider">
+          <img src="images/gallery/cafe-ambiance.jpg" alt="Cafe ambiance" class="slide">
+          <img loading="lazy" src="images/gallery/coffee-prep.jpg" alt="Coffee preparation" class="slide">
+          <img loading="lazy" src="./images/gallery/pastries.jpg" alt="Pastries" class="slide">
+          <img loading="lazy" src="./images/gallery/cozy-seating.jpg" alt="Cozy seating" class="slide">
+        </div>
+        <button class="gallery-nav prev"><</button>
+        <button class="gallery-nav next">></button>
+        <div class="dots"></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact section fade-in">
+    <div class="container">
+      <h2 class="section-title">Contact & Reservations</h2>
+      <div class="contact-content">
+        <div class="contact-info">
+          <h2>Visit Us</h2>
+          <div class="contact-item">
+            <div class="contact-icon">📍</div>
+            <div>
+              <h3>Location</h3>
+              <p>Kigali, City Center<br>Down Town</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">📞</div>
+            <div>
+              <h3>Phone</h3>
+              <p>+250 795 639 032</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">🕒</div>
+            <div>
+              <h3>Hours</h3>
+              <p>Mon-Fri: 7AM-9PM<br>Sat-Sun: 8AM-10PM</p>
+            </div>
+          </div>
+        </div>
+        <form class="contact-form">
+          <div class="form-group">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div class="form-group">
+            <label for="party">Party Size</label>
+            <select id="party" name="party">
+              <option value="1">1 Person</option>
+              <option value="2">2 People</option>
+              <option value="3-4">3-4 People</option>
+              <option value="5+">5+ People</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message">Date & Time / Message</label>
+            <textarea id="message" name="message" placeholder="e.g., Reservation for Friday 7PM" required></textarea>
+          </div>
+          <button type="submit" class="submit-btn">Send Reservation Request</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2026 Omda Cafe. All rights reserved. Made with ☕ & ❤️</p>
+    </div>
+  </footer>
+
+  <script defer src="js/script.js"></script>
+</body>
+</html>
