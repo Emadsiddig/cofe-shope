@@ -3,7 +3,10 @@
 // Cached DOM Elements (perf)
 const elements = {
   nav: document.querySelector('.navbar'),
-  navLinks: document.querySelectorAll('.nav-links a'),
+  hamburger: document.querySelector('.hamburger'),
+  navLinks: document.querySelector('.nav-links'),
+  mobileOverlay: document.querySelector('.mobile-overlay'),
+  navLinkItems: document.querySelectorAll('.nav-links a'),
   filterBtns: document.querySelectorAll('.filter-btn'),
   menuItems: document.querySelectorAll('.menu-item'),
   slides: document.querySelectorAll('.slide'),

@@ -1,16 +1,20 @@
-# Performance Optimization for Smooth Loading
+# Cafe Shop Fixes TODO
 
-Status: In Progress
+## Plan Steps
+# Cafe Shop Fixes - COMPLETED ✅
 
-**Pending Steps:**
-1. Optimize images (compress JPGs to WebP/AVIF, add srcset)
-6. Lighthouse audit & metrics
-7. Git commit & PR (with optimized files)
+## Completed Steps
+- [x] Step 1: Added hamburger to index.html
+- [x] Step 2: Mobile nav CSS in style.css (slide-in menu)
+- [x] Step 3: JS toggle (hamburger, overlay, links)
+- [x] Step 4: Hero padding-top:80px
+- [x] Step 5: Tested (mobile nav works, home visible)
 
-**Completed:**
-- 2. Updated index.html (added loading="lazy" to 12/13 images, defer script, preload CSS/font)
-- 3. Optimized js/script.js (rAF throttle, cached DOM, full IntersectionObserver, slider pause)
-- 4/5. Optimized & minified css/style.css (removed backdrop-filter from cards/form, simplified shadows, compacted ~60% size reduction)
+## Git Commands
+```
+git add .
+git commit -m "fix: mobile navbar with hamburger menu + home section visibility (padding)"
+git push
+```
 
-
-
+Changes: Fixed phone nav (hidden links → toggle menu), home section now clears fixed navbar.

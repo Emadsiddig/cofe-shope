@@ -4,13 +4,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Omda Cafe - Best Coffee &amp; Food in Town</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style-optimized.css">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
 </head>
 <body>
   <nav class="navbar">
-    <div class="nav-container container">
+<div class="nav-container container">
 ☕✨ Omda Cafe ✨
+      <button class="hamburger" aria-label="Toggle Menu">☰</button>
       <ul class="nav-links">
         <li><a href="#home">Home</a></li>
         <li><a href="#about">About</a></li>
@@ -21,7 +22,9 @@
     </div>
   </nav>
 
-  <section id="home" class="hero">
+  <div class="mobile-overlay"></div>
+
+  <section id="home" class="hero" style="padding-top: 80px;">
     <div class="hero-content container fade-in">
       <h1>Welcome to Omda Cafe</h1>
       <p>Experience the best coffee, delicious food, and warm atmosphere</p>
@@ -182,6 +185,23 @@
     </div>
   </footer>
 
-  <script src="js/script.js"></script>
+  <script>
+    // Lazy load images
+    document.addEventListener('DOMContentLoaded', () => {
+      const images = document.querySelectorAll('img[data-src]');
+      const imageObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            const img = entry.target;
+            img.src = img.dataset.src;
+            img.classList.remove('lazy');
+            imageObserver.unobserve(img);
+          }
+        });
+      });
+      images.forEach(img => imageObserver.observe(img));
+    });
+  </script>
+  <script src="js/script-optimized.js"></script>
 </body>
 </html>
